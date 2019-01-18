@@ -62,6 +62,12 @@ $(".btn").on("click",function(){
   }
 });
 
+$(".level-title").on("click", function(){
+  if(tab.length<1){
+    nowyPoziom();
+  }
+});
+
 $(document).on("keypress",function(){
   if(tab.length<1){
     nowyPoziom();
