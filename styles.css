@@ -1,5 +1,5 @@
 html {
-	-webkit-text-size-adjust: none;
+	/* -webkit-text-size-adjust: none; */
 	touch-action: manipulation;
 }
 
@@ -11,7 +11,7 @@ body {
 }
 
 .level-title {
-  font-size: 6rem;
+  font-size: 2.3em;
   margin:  3% 10%;
   color: #ffedaf;
   line-height:1.4;
@@ -29,7 +29,7 @@ body {
 }
 
 .btn {
-  margin: 12px;
+  margin: 0.6%;
   display: inline-block;
   height: 250px;
   width: 250px;
@@ -64,7 +64,7 @@ body {
 }
 
 .stopka{
-  font-size:2.4rem;
+  font-size:2.4em;
   font-weight:200;
   padding:2% 0 0;
 }
