@@ -2,7 +2,7 @@ var tab=[];
 var i=0;
 
 function inicjalizacja(){
-  $(".level-title").html("You Lost! Your Score Is "+(tab.length)+" Press <span class='here'>Here</span> To Start");
+  $(".head").html("You Lost! Your Score Is "+(tab.length)+" Press <span class='here'>Here</span> To Start");
   tab=[];
   var aud= new Audio("sounds/wrong.mp3");
   aud.play();
@@ -31,7 +31,7 @@ function grajDzwiek(numer){
 function nowyPoziom(){
   var nowy=Math.floor(Math.random()*4);
   tab.push(nowy);
-  $(".level-title").text("Score: "+(tab.length-1));
+  $(".head").text("Score: "+(tab.length-1));
   grajDzwiek(nowy);
   $("."+nazwaButona(nowy)).animate({opacity: 0.2},300).animate({opacity:1},500);
   i=0;
