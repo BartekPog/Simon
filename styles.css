@@ -1,6 +1,7 @@
-/* html {
-    -webkit-text-size-adjust: none
-} */
+html {
+	-webkit-text-size-adjust: none;
+	touch-action: manipulation;
+}
 
 body {
   text-align: center;
