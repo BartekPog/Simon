@@ -2,7 +2,7 @@ var tab=[];
 var i=0;
 
 function inicjalizacja(){
-  $(".level-title").text("You Lost! Your Score Is "+(tab.length)+" Press Any Key To Start");
+  $(".level-title").html("You Lost! Your Score Is "+(tab.length)+" Press <span class='here'>Here</span> To Start");
   tab=[];
   var aud= new Audio("sounds/wrong.mp3");
   aud.play();
@@ -61,7 +61,6 @@ $(".btn").on("click",function(){
     }
   }
 });
-
 $(".level-title").on("click", function(){
   if(tab.length<1){
     nowyPoziom();
